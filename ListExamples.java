@@ -5,7 +5,7 @@ interface StringChecker { boolean checkString(String s); }
 
 class ListExamples {
 
-  // Returns a new new list that has all the elements of the input list for which
+  // Returns a new list that has all the elements of the input list for which
   // the StringChecker returns true, and not the elements that return false, in
   // the same order they appeared in the input list;
   static List<String> filter(List<String> list, StringChecker sc) {
@@ -41,7 +41,7 @@ class ListExamples {
     while(index2 < list2.size()) {
       result.add(list2.get(index2));
       // change index1 below to index2 to fix test
-      index2 += 1;
+      index1 += 1;
     }
     return result;
   }
